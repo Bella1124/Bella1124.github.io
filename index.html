@@ -62,3 +62,58 @@
 	</body>
 	
 </html>
+
+
+<html>
+
+		<head>
+		 <!--below is javascript-->
+
+		<script type="text/javascript">
+
+		// variable declaration. Notice that you don't need to specify the variable type
+		
+		var number=1;
+		 // declare a function called update. This function takes no input parameters
+
+                function update(){
+
+                // the following two lines can resize an image
+
+		/*                      document.getElementById('img').style.height='50px';
+
+                        document.getElementById('img').style.width='50px';*/
+   
+
+   // make number switch between 1 and -1
+
+		number = number * -1;
+
+                        if (number == -1){
+						
+						document.getElementById('img').src='https://previews.123rf.com/images/yupiramos/yupiramos1708/yupiramos170811787/83813521-cartoon-light-bulb-icon-vector-illustration.jpg';
+						
+					}
+		
+					 if (number == 1){
+
+                                document.getElementById('img').src='https://st2.depositphotos.com/4308409/6462/v/950/depositphotos_64629827-stock-illustration-cartoon-sad-light-buld.jpg';
+		
+		   }
+
+                }
+
+                </script>
+
+        </head>
+
+        <body>
+
+       <!-- onclick specifies the function to call when the image is called-->
+
+                <img id='img' src='https://previews.123rf.com/images/yupiramos/yupiramos1708/yupiramos170811787/83813521-cartoon-light-bulb-icon-vector-illustration.jpg' onclick="update()">
+
+        </body>
+
+</html>
+		
